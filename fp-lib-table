@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Practica 1")(type KiCad)(uri "${KIPRJMOD}/Libraries/Footprint/Practica 1.pretty")(options "")(descr ""))
+)

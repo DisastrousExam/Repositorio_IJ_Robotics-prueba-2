@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Simulation_SPICE:DIODE D1
+U 1 1 686BF7D3
+P 4950 3300
+F 0 "D1" V 4996 3220 50  0000 R CNN
+F 1 "DIODE" V 4905 3220 50  0000 R CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 4950 3300 50  0001 C CNN
+F 3 "~" H 4950 3300 50  0001 C CNN
+F 4 "Y" H 4950 3300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4950 3300 50  0001 L CNN "Spice_Primitive"
+	1    4950 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 686C07CE
+P 1625 2325
+F 0 "J1" H 1705 2317 50  0000 L CNN
+F 1 "Conn_01x02" H 1705 2226 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1625 2325 50  0001 C CNN
+F 3 "~" H 1625 2325 50  0001 C CNN
+	1    1625 2325
+	1    0    0    -1  
+$EndComp
+Text GLabel 1425 2425 0    50   Input ~ 0
+GND
+Text GLabel 1425 2325 0    50   Input ~ 0
++12V
+$Comp
+L Transistor_BJT:BC107 Q2
+U 1 1 686C150A
+P 4175 4100
+F 0 "Q2" H 4366 4146 50  0000 L CNN
+F 1 "BC107" H 4366 4055 50  0000 L CNN
+F 2 "Practica 1:NSVBCP56MTWG" H 4375 4025 50  0001 L CIN
+F 3 "http://www.b-kainka.de/Daten/Transistor/BC108.pdf" H 4175 4100 50  0001 L CNN
+	1    4175 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 686BEAFD
+P 3425 3325
+F 0 "R1" V 3220 3325 50  0000 C CNN
+F 1 "32" V 3311 3325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3425 3325 50  0001 C CNN
+F 3 "~" H 3425 3325 50  0001 C CNN
+	1    3425 3325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3525 3325 3975 3325
+Wire Wire Line
+	3325 3325 3100 3325
+$Comp
+L Device:R_Small_US R2
+U 1 1 686C3B14
+P 3425 4100
+F 0 "R2" V 3220 4100 50  0000 C CNN
+F 1 "32" V 3311 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3425 4100 50  0001 C CNN
+F 3 "~" H 3425 4100 50  0001 C CNN
+	1    3425 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3975 4100 3525 4100
+$Comp
+L Simulation_SPICE:DIODE D2
+U 1 1 686C772E
+P 4950 4100
+F 0 "D2" V 4996 4020 50  0000 R CNN
+F 1 "DIODE" V 4905 4020 50  0000 R CNN
+F 2 "Diode_SMD:D_0402_1005Metric" V 4859 4020 50  0001 R CNN
+F 3 "~" H 4950 4100 50  0001 C CNN
+F 4 "Y" H 4950 4100 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 4950 4100 50  0001 L CNN "Spice_Primitive"
+	1    4950 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D4
+U 1 1 686C7D1E
+P 6400 4075
+F 0 "D4" V 6446 3995 50  0000 R CNN
+F 1 "DIODE" V 6355 3995 50  0000 R CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 6400 4075 50  0001 C CNN
+F 3 "~" H 6400 4075 50  0001 C CNN
+F 4 "Y" H 6400 4075 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 6400 4075 50  0001 L CNN "Spice_Primitive"
+	1    6400 4075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D3
+U 1 1 686C8278
+P 6400 3300
+F 0 "D3" V 6446 3220 50  0000 R CNN
+F 1 "DIODE" V 6355 3220 50  0000 R CNN
+F 2 "Diode_SMD:D_0402_1005Metric" H 6400 3300 50  0001 C CNN
+F 3 "~" H 6400 3300 50  0001 C CNN
+F 4 "Y" H 6400 3300 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 6400 3300 50  0001 L CNN "Spice_Primitive"
+	1    6400 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3450 4950 3675
+Wire Wire Line
+	4950 3675 4275 3675
+Connection ~ 4950 3675
+Wire Wire Line
+	4950 3675 4950 3950
+Connection ~ 4275 3675
+Wire Wire Line
+	4275 3675 4275 3525
+Wire Wire Line
+	4275 3125 4275 2825
+Wire Wire Line
+	4275 2825 4950 2825
+Wire Wire Line
+	4950 2825 4950 3150
+Wire Wire Line
+	4950 2825 5625 2825
+Wire Wire Line
+	6400 2825 6400 3150
+Connection ~ 4950 2825
+Wire Wire Line
+	4275 4300 4275 4675
+Wire Wire Line
+	4950 4675 4950 4250
+Wire Wire Line
+	6400 4225 6400 4675
+Wire Wire Line
+	4275 4675 4950 4675
+Connection ~ 4950 4675
+Wire Wire Line
+	4950 4675 5600 4675
+Wire Wire Line
+	6400 3925 6400 3675
+$Comp
+L Transistor_BJT:BC107 Q3
+U 1 1 686CACFF
+P 7300 3275
+F 0 "Q3" H 7491 3321 50  0000 L CNN
+F 1 "BC107" H 7491 3230 50  0000 L CNN
+F 2 "Practica 1:NSVBCP56MTWG" H 7500 3200 50  0001 L CIN
+F 3 "http://www.b-kainka.de/Daten/Transistor/BC108.pdf" H 7300 3275 50  0001 L CNN
+	1    7300 3275
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC107 Q4
+U 1 1 686CB77A
+P 7300 4075
+F 0 "Q4" H 7491 4121 50  0000 L CNN
+F 1 "BC107" H 7491 4030 50  0000 L CNN
+F 2 "Practica 1:NSVBCP56MTWG" H 7500 4000 50  0001 L CIN
+F 3 "http://www.b-kainka.de/Daten/Transistor/BC108.pdf" H 7300 4075 50  0001 L CNN
+	1    7300 4075
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3075 7200 2825
+Wire Wire Line
+	7200 2825 6400 2825
+Connection ~ 6400 2825
+Wire Wire Line
+	6400 3675 7200 3675
+Wire Wire Line
+	7200 3475 7200 3675
+Connection ~ 6400 3675
+Connection ~ 7200 3675
+Wire Wire Line
+	7200 3675 7200 3875
+Wire Wire Line
+	6400 4675 7200 4675
+Wire Wire Line
+	7200 4675 7200 4275
+Connection ~ 6400 4675
+$Comp
+L Device:R_Small_US R4
+U 1 1 686E2F6C
+P 8125 4075
+F 0 "R4" V 7920 4075 50  0000 C CNN
+F 1 "32" V 8011 4075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8125 4075 50  0001 C CNN
+F 3 "~" H 8125 4075 50  0001 C CNN
+	1    8125 4075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 686E343C
+P 8125 3275
+F 0 "R3" V 7920 3275 50  0000 C CNN
+F 1 "32" V 8011 3275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8125 3275 50  0001 C CNN
+F 3 "~" H 8125 3275 50  0001 C CNN
+	1    8125 3275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 3275 8025 3275
+Wire Wire Line
+	7500 4075 8025 4075
+Wire Wire Line
+	8225 4075 8975 4075
+Wire Wire Line
+	8975 4075 8975 2025
+Wire Wire Line
+	8975 2025 3100 2025
+Wire Wire Line
+	3100 2025 3100 3325
+Wire Wire Line
+	8225 3275 8700 3275
+Wire Wire Line
+	8700 3275 8700 5325
+Wire Wire Line
+	8700 5325 3125 5325
+Wire Wire Line
+	3125 5325 3125 4100
+Wire Wire Line
+	3125 4100 3325 4100
+Wire Wire Line
+	3125 4100 2825 4100
+Connection ~ 3125 4100
+Wire Wire Line
+	2750 3325 2875 3325
+Connection ~ 3100 3325
+Text GLabel 5625 2200 0    50   Input ~ 0
++12V
+Text GLabel 5600 5125 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5600 5125 5600 4675
+Connection ~ 5600 4675
+Wire Wire Line
+	5600 4675 6400 4675
+Wire Wire Line
+	5625 2200 5625 2825
+Connection ~ 5625 2825
+Wire Wire Line
+	5625 2825 6400 2825
+$Comp
+L Connector_Generic:Conn_01x02 Motor
+U 1 1 686EE99A
+P 5625 3375
+F 0 "Motor" V 5589 3187 50  0000 R CNN
+F 1 "Conn_01x02" V 5498 3187 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5625 3375 50  0001 C CNN
+F 3 "~" H 5625 3375 50  0001 C CNN
+	1    5625 3375
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5625 3575 5625 3675
+Wire Wire Line
+	5625 3675 4950 3675
+Wire Wire Line
+	5725 3575 5725 3675
+Wire Wire Line
+	5725 3675 6400 3675
+Text Label 5575 3275 0    50   ~ 0
+Motor
+Text GLabel 2125 3325 0    50   Input ~ 0
++12V
+Wire Wire Line
+	2125 3325 2350 3325
+Wire Wire Line
+	6400 3450 6400 3675
+$Comp
+L Switch:SW_Push SW1
+U 1 1 686FF167
+P 2550 3325
+F 0 "SW1" H 2550 3610 50  0000 C CNN
+F 1 "SW_Push" H 2550 3519 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 2550 3525 50  0001 C CNN
+F 3 "~" H 2550 3525 50  0001 C CNN
+	1    2550 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 686FF8F6
+P 2500 3650
+F 0 "R5" V 2295 3650 50  0000 C CNN
+F 1 "10k" V 2386 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2500 3650 50  0001 C CNN
+F 3 "~" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	0    1    1    0   
+$EndComp
+Text GLabel 2075 3650 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2075 3650 2400 3650
+Wire Wire Line
+	2600 3650 2875 3650
+Wire Wire Line
+	2875 3650 2875 3325
+Connection ~ 2875 3325
+Wire Wire Line
+	2875 3325 3100 3325
+Text GLabel 2100 4100 0    50   Input ~ 0
++12V
+Text GLabel 2050 4450 0    50   Input ~ 0
+GND
+$Comp
+L Switch:SW_Push SW2
+U 1 1 68701889
+P 2550 4100
+F 0 "SW2" H 2550 4385 50  0000 C CNN
+F 1 "SW_Push" H 2550 4294 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 2550 4300 50  0001 C CNN
+F 3 "~" H 2550 4300 50  0001 C CNN
+	1    2550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R6
+U 1 1 68701D8F
+P 2500 4450
+F 0 "R6" V 2295 4450 50  0000 C CNN
+F 1 "10k" V 2386 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2500 4450 50  0001 C CNN
+F 3 "~" H 2500 4450 50  0001 C CNN
+	1    2500 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 4450 2400 4450
+Wire Wire Line
+	2100 4100 2350 4100
+Wire Wire Line
+	2600 4450 2825 4450
+Wire Wire Line
+	2825 4450 2825 4100
+Connection ~ 2825 4100
+Wire Wire Line
+	2825 4100 2750 4100
+Wire Wire Line
+	4275 3675 4275 3900
+$Comp
+L Transistor_BJT:BC107 Q1
+U 1 1 686BEEB9
+P 4175 3325
+F 0 "Q1" H 4366 3371 50  0000 L CNN
+F 1 "BC107" H 4366 3280 50  0000 L CNN
+F 2 "Practica 1:NSVBCP56MTWG" H 4375 3250 50  0001 L CIN
+F 3 "http://www.b-kainka.de/Daten/Transistor/BC108.pdf" H 4175 3325 50  0001 L CNN
+F 4 "TBD05-04-1-G-G" H 4175 3325 50  0001 C CNN "Part No."
+	1    4175 3325
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
