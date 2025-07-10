@@ -29,17 +29,17 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 686C07CE
-P 5525 1075
-F 0 "J1" H 5605 1067 50  0000 L CNN
-F 1 "Conn_01x02" H 5605 976 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5525 1075 50  0001 C CNN
-F 3 "~" H 5525 1075 50  0001 C CNN
-	1    5525 1075
+P 1950 1050
+F 0 "J1" H 2030 1042 50  0000 L CNN
+F 1 "Conn_01x02" H 2030 951 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1950 1050 50  0001 C CNN
+F 3 "~" H 1950 1050 50  0001 C CNN
+	1    1950 1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 5325 1175 0    50   Input ~ 0
+Text GLabel 1750 1150 0    50   Input ~ 0
 GND
-Text GLabel 5325 1075 0    50   Input ~ 0
+Text GLabel 1750 1050 0    50   Input ~ 0
 +12V
 $Comp
 L Transistor_BJT:BC107 Q2
